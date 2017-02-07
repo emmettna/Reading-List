@@ -10,8 +10,34 @@
   <h1>Refactoring by Martin Fowler</h1>
     <ol>
       <li>Chapter 1</li>
-
+        <p>1. Ugly and too long codes(unnecessarilly) prone to cause mistakes and bugs
+          impossible to reuse. Which means, it will be difficult to change the code when
+          your client askes some changes.</p>
+        <p>2. Make a solid test unit in advance of refactoring.</p>
+        <p>3. First target is overly long statement method. Extract methods
+          then don't forget to run the test after changes.</p>
+        <p>4. After split massive methods into chunks change the variables</p>
+        <p>5. a method should be on the object whoses data it uses</p>
+        <p>6. get rid of temp variables and locally scoped variables as much as you canvas</p>
+        <p>7. replacing temp variables with queries is another great option.</p>
+        <p>8. Switch statement better stay with the origin of values (migrate the method to
+          the class holds the data.)</p>
+        <p>9. Replace type code with State/strategy</p>
+        <p>10. Extract Method, Move Method and Replace conditions with Polymorphism</p>
+      <li>Chapter 2</li>
+        <p>1. When you refactor there are to steps. Change the codes and add functions
+          Don't try to add function and change the code at the same time. It will end up
+          impossible code to look up</p>
+        <p>2. without refctoring, even good codes can lose it's design. Programming is saying
+          what your device to respond. if you want it to answer correctly. Better say it clearly</p>
+        <p>3. So when to refactor? When you add new function, reported bugs and when you review the codes</p>
+        <p>4. Many cases your project is coupled with Database, put a middle layer so when you change code,
+          you don't need to change codes in database.</p>
+        <p>5. Interface is treakier to deal with. let the old codes connect to new code. so peope using the interface
+          won't have to change.</p>
+        <p>6. when it comes to performance, small tiny code is not the solution. try the overall codes.</p>
     </ol>
+
   <h3>Appendix</h3>
   UML - Unified Medeling Language
 </body>
