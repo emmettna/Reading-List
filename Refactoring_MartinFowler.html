@@ -36,6 +36,32 @@
         <p>5. Interface is treakier to deal with. let the old codes connect to new code. so peope using the interface
           won't have to change.</p>
         <p>6. when it comes to performance, small tiny code is not the solution. try the overall codes.</p>
+      <li>Chapter 3</li>
+        <p>Duplicated code is the first smell implying you should kick start refactoring. Common simplest
+        mistakes are written two same method in one class and next one is between siblings(which obviously you
+         can pull it to parent class)</p>
+        <p>Long method with explanation added is a good idea but the best is making the method short so anybody can
+          understand.</p>
+        <p>Large class often  shows up that too many variales </p>
+        <p>Divergent change is one class that suffers many kinds of changes, and shotgun surgery is one
+          change that alters many classes.</p>
+        <p> Data items tend to be like children. they hang around together. probably good way to
+          break this up is extract class on the fields. Reducing field lists and parameter lists will remove
+          some bad smells.</p>
+        <p>Lazy class which doens't pay much role, probably it did its job before after refactoring it doens't do enough
+           work to get it's class title, then collapse the hierarchy. </p>
+        <p>Long comments actually means bad codes. Because it needs to explain imperfect codes.</p>
+      <li>Chapter 4</li>
+        <p>Every Class needs a method that tests its class. Operated automatically</p>
+        <p> There is also framework you can run test automatically</p>
+        <p>Unit test is assuming the other whole is working fine and Fuctional Test is testing the entire work.</p>
+        <p>When testing. Think of the boundary conditions</p>
+      <li>Chapter 5-6</li>
+        <p>Write a name and summaries and so on for Format of the refactoring. Like draw a sketch of what you are going to do </p>
+        <p>When temporary variables are just too tangled to replace, re place Method with Method object </p>
+        <p>Name the method by what it does not by how it does</p>
+        <p>While extracting method, when you have to return two variables, you can arrange mutiple methods to return one value</p>
+        <p>A good practice to replace local variable to query is, put the variable in Final then test first.</p>
     </ol>
 
   <h3>Appendix</h3>
