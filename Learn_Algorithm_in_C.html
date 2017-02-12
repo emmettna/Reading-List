@@ -30,7 +30,20 @@
         <li>Biconnectivity</li>
         Think about Vertex A, B, C and D A,b,c are all connected to each other but D is connected to only C then when C is disposed, D has no way to reach A
         So C is a Articulation Point. Articulation Point is a critical issue when it comes to NetWork. since it has to reach every points simultaneoulsy.
-        
+        <li>Representation of Set</li>
+        One way to find a minimum cost spanning tree is Priority queue search From a root, find every nodes(vertices) and by queue,
+        find the next nodes sequencely. Another way is Kruska Algorithm. Set two roots, where its original root and the bottom.
+        Shortest Path problem might be the most general issues you'd face in field. Find the prices to get to the next vertex. and calculate them to
+        the destination. Dijkstra Algorithm is one way to do it.
+        <li>Directed Graph</li>
+        Transitive Closure == Reachability. Depth first Search is used for this. Warshall Algorithm is also useful. it must both
+        way connected.
+        Floyd Algorithm is for finding all shortest paths. It repeats Dijkstra's algorithm for V times.
+        Topological Sorting represents sequantial works. A needs to do C,D and E work first to do F work. Also it can't be
+        cycle.
+        <li>NetWork</li>
+        Ford-Fulkerson Algorithm. it's design to find the maximum flow in network. Each edge has weight (in this case the capacity of flow)
+        Breadth First search needs to be implemented then Augmenting Path.
         <li></li>
       </ul>
 
