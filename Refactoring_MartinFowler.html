@@ -37,7 +37,7 @@
           won't have to change.</p>
         <p>6. when it comes to performance, small tiny code is not the solution. try the overall codes.</p>
       <li>Chapter 3</li>
-        <p>Duplicated code is the first smell implying you should kick start refactoring. Common simplest
+        <p>1. Duplicated code is the first smell implying you should kick start refactoring. Common simplest
         mistakes are written two same method in one class and next one is between siblings(which obviously you
          can pull it to parent class)</p>
         <p>Long method with explanation added is a good idea but the best is making the method short so anybody can
@@ -62,9 +62,36 @@
         <p>Name the method by what it does not by how it does</p>
         <p>While extracting method, when you have to return two variables, you can arrange mutiple methods to return one value</p>
         <p>A good practice to replace local variable to query is, put the variable in Final then test first.</p>
+        <p>Replace Method with Method object by mean, turn all these local variables into fields on the method object</p>
+      <li>Chapter 7</li>
+        <p>When moving a method, Probably better moving a clutch rather than just one since they are coupled and declare the
+          method name more reasonable </p>
+      <li>Chaper 8</li>
+        <p>Arrays are common structure for organizing data. but if the elements are not related to each other,
+          Replace Arrays with objects. Encapsulation is a bonus.</p>
+        <p>Replace Magic number with Symbolic Constant</p>
+        <p>Replace type code with subclasses is primarily a scaffolding move that enables Replace conditional with
+          Polymorphism. if there is no conditional statement, replace type code with class is the better and less critical move</p>
+      <li>Chapter 9</li>
+        <p>One of the most common areas of complexity in a program lies in complex conditional logic</p>
+        <p>Rather use break or continue than control flag. If can't, extract logic into a method and return.</p>
+        <p>When flipping condition, mind the operators if (a&&b)==if(!a||b)</p>
+      <li>Chapter 10</li>
+        <p>Good way of renaming is what you'd comment and make it the name. Remember your code is for a Human first a computer second</p>
+        <p>Replace Error Code with Exception </p>
+        <p>Replace exception with Test codes which you might trigger up front</p>
+      <li>Chapter 11</li>
+        <p>a Pulled up method can get setter and getter when it's used, probably better use abstract getter since the use of origin were different </p>
+        <p>Super class is a good choice for mutiple common behaviors but superclass can be only one. if need more, consider using interface.</p>
+        <p>if two subclasses have a similar method but not exactly the same, Use templates</p>
+      <li>Chapter 12</li>
+        <p>Four big steps for Big refactorings. Tease Apart Inheritance, Convert Prodedural Design to Objects, Separate Domain from Presentation and Extract Hierarchy</p>
+        <p>When dealing with tangled inheritance hierarchy,Don't be afraid one step back, and make right classes for the tree and go two step forward by deleting the uncetain classes</p>
+        <p> </p>
     </ul>
 
   <h3>Appendix</h3>
   UML - Unified Medeling Language
+  Factory Method - it hides creating a new object
 </body>
 </html>
